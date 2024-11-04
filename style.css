@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    color: aliceblue !important;
+
+}
+body{
+    min-height: 100vh;
+    background-image: url(./imges/purple.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+nav {
+    background:  rgb(179, 34, 179);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li{
+    height: 50px;
+}
+nav ul li a{
+    height: 100%;
+    color:black;
+    text-transform:none !important;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+}
+ a:hover{
+    background: grey;
+}
+
+.bar{
+    display: none;
+}
+.time{
+    margin-right: auto;
+    font-size: xx-large;
+    text-transform: none !important;
+    margin-left:30px!important;
+    margin-top: 10px;
+
+
+}
+.side{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width:250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.123);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.side li{
+    width:100%;
+}
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    .bar{
+        display: block;
+    }
+
+} 
